@@ -2,7 +2,7 @@
   <div class="products max-w-screen-2xl mx-auto">
     <ul :class="`grid grid-cols-${numOfColumn} gap-4 mb-4`">
       <li :key="index" v-for="(product, index) in pageOfItems">
-        <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
+        <div class="px-3 sm:px-3 py-3 sm:py-3 mx-auto bg-white shadow">
           <div class="thumbnail h-64 mb-2">
             <router-link to="#">
               <img
@@ -105,7 +105,7 @@ export default defineComponent({
   name: 'Product',
   data() {
     return {
-      numOfColumn: 4,
+      numOfColumn: 5,
       pager: {} as Pager,
       pageOfItems: [] as Page[],
     };

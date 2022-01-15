@@ -9,6 +9,9 @@ module.exports = {
       flex: {
         stretch: '1 0 auto',
       },
+      maxHeight: {
+        banner: 500,
+      },
     },
   },
   variants: {

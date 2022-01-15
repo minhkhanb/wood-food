@@ -19,8 +19,10 @@
     "jw-paginate": "^1.0.4",
     "lodash": "^4.17.21",
     "sass": "^1.45.2",
+    "swiper": "^6.8.4",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
+    "vue-slick": "^1.1.16",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {

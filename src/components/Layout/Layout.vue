@@ -61,7 +61,11 @@
       </div>
     </header>
     <aside>
-      <div class="side-left"></div>
+      <div class="side-left">
+        <div class="container mx-auto">
+          <SlickCarousel />
+        </div>
+      </div>
       <div class="nav-menu bg-green-500 mb-6">
         <div class="container mx-auto">
           <nav class="flex px-8 py-4">
@@ -249,6 +253,7 @@ import {
   SearchIcon,
   ClockIcon,
 } from '@heroicons/vue/outline';
+import SlickCarousel from '@/components/SlickCarousel.vue';
 
 export default defineComponent({
   components: {
@@ -256,6 +261,7 @@ export default defineComponent({
     PhoneIcon,
     SearchIcon,
     ClockIcon,
+    SlickCarousel,
   },
   data() {
     return {
