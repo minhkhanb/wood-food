@@ -64,5 +64,8 @@
       "vue-cli-service lint",
       "git add"
     ]
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
