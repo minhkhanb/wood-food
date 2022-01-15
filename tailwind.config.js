@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         menu: '#f4f7f6',
       },
+      flex: {
+        stretch: '1 0 auto',
+      },
     },
   },
   variants: {

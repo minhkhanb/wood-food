@@ -1,15 +1,15 @@
-<template>
+﻿<template>
   <div
     class="layout container max-w-full mx-auto"
     :class="{ 'sidebar-open': openSidebar }"
   >
     <header class="pt-6 border-b">
       <div class="container mx-auto">
-        <div class="flex justify-between items-center mb-6">
-          <div class="logo">
+        <div class="flex flex-auto justify-between items-center mb-6">
+          <div class="logo flex-stretch">
             <h1>
               <router-link to="#">
-                <figure class="bg-gray-100 rounded-xl p-8 dark:bg-gray-800">
+                <figure class="rounded-xl p-8">
                   <img
                     class="w-24 h-24 rounded-full mx-auto"
                     :src="require('@/assets/images/logo.jpg')"
@@ -19,47 +19,87 @@
               </router-link>
             </h1>
           </div>
+
+          <div
+            class="flex flex-auto w-full px-4 py-2 search border border-gray-700 rounded-3xl overflow-hidden"
+          >
+            <input
+              type="text"
+              placeholder="Tìm kiếm sản phẩm..."
+              class="border-0 focus:outline-none bg-transparent w-full"
+            />
+            <button class="w-6 ml-2">
+              <SearchIcon />
+            </button>
+          </div>
+
+          <div class="top-bar flex flex-auto ml-8">
+            <div class="contact flex items-center">
+              <PhoneIcon class="text-yellow-500 w-12" />
+              <p class="text-yellow-500 ml-2 font-bold w-32">
+                Tư vấn hỗ trợ <br />0986 625 525
+              </p>
+            </div>
+
+            <div class="work-open flex items-center">
+              <ClockIcon class="text-green-500 w-12" />
+              <p class="text-green-500 ml-2 font-bold w-56">
+                Thời gian làm việc <br />
+                <span class="font-medium">Thứ 2 - Thứ 7 | 8:00 - 17:00</span>
+              </p>
+            </div>
+
+            <div class="shipping flex items-center">
+              <TruckIcon class="text-green-500 w-12" />
+              <p class="text-green-500 ml-2 font-bold w-56">
+                Miễn phí vận chuyển <br />
+                <span class="font-medium">Đơn hàng > 1.000.000 VNĐ</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <aside>
       <div class="side-left"></div>
-      <div class="nav-menu">
-        <nav class="flex p-8">
-          <ul class="flex">
-            <li class="">
-              <router-link
-                class="font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 uppercase"
-                to=""
-                >trang chủ</router-link
-              >
-            </li>
+      <div class="nav-menu bg-green-500 mb-6">
+        <div class="container mx-auto">
+          <nav class="flex px-8 py-4">
+            <ul class="flex">
+              <li class="">
+                <router-link
+                  class="text-white font-medium px-3 py-2 rounded-lg text-lg hover:text-gray-300 uppercase"
+                  to=""
+                  >trang chủ</router-link
+                >
+              </li>
 
-            <li class="">
-              <router-link
-                class="font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 uppercase"
-                to=""
-                >giới thiệu</router-link
-              >
-            </li>
+              <li class="">
+                <router-link
+                  class="text-white font-medium px-3 py-2 rounded-lg text-lg hover:text-gray-300 uppercase"
+                  to=""
+                  >giới thiệu</router-link
+                >
+              </li>
 
-            <li class="">
-              <router-link
-                class="font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 uppercase"
-                to=""
-                >sản phẩm</router-link
-              >
-            </li>
+              <li class="">
+                <router-link
+                  class="text-white font-medium px-3 py-2 rounded-lg text-lg hover:text-gray-300 uppercase"
+                  to=""
+                  >sản phẩm</router-link
+                >
+              </li>
 
-            <li class="">
-              <router-link
-                class="font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 uppercase"
-                to=""
-                >liên hệ</router-link
-              >
-            </li>
-          </ul>
-        </nav>
+              <li class="">
+                <router-link
+                  class="text-white font-medium px-3 py-2 rounded-lg text-lg hover:text-gray-300 uppercase"
+                  to=""
+                  >liên hệ</router-link
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </aside>
     <main class="main-content">
@@ -203,8 +243,20 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import {
+  TruckIcon,
+  PhoneIcon,
+  SearchIcon,
+  ClockIcon,
+} from '@heroicons/vue/outline';
 
 export default defineComponent({
+  components: {
+    TruckIcon,
+    PhoneIcon,
+    SearchIcon,
+    ClockIcon,
+  },
   data() {
     return {
       openSidebar: false,
