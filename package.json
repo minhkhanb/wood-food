@@ -17,6 +17,7 @@
     "core-js": "^3.6.5",
     "json-server": "^0.16.3",
     "lodash": "^4.17.21",
+    "rc-pagination": "^3.1.15",
     "sass": "^1.45.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",

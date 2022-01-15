@@ -29,15 +29,7 @@
           <ul class="flex">
             <li class="">
               <router-link
-                class="
-                  font-medium
-                  px-3
-                  py-2
-                  text-gray-700
-                  rounded-lg
-                  hover:bg-gray-100 hover:text-gray-900
-                  uppercase
-                "
+                class="font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 uppercase"
                 to=""
                 >trang chủ</router-link
               >
@@ -45,15 +37,7 @@
 
             <li class="">
               <router-link
-                class="
-                  font-medium
-                  px-3
-                  py-2
-                  text-gray-700
-                  rounded-lg
-                  hover:bg-gray-100 hover:text-gray-900
-                  uppercase
-                "
+                class="font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 uppercase"
                 to=""
                 >giới thiệu</router-link
               >
@@ -61,15 +45,7 @@
 
             <li class="">
               <router-link
-                class="
-                  font-medium
-                  px-3
-                  py-2
-                  text-gray-700
-                  rounded-lg
-                  hover:bg-gray-100 hover:text-gray-900
-                  uppercase
-                "
+                class="font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 uppercase"
                 to=""
                 >sản phẩm</router-link
               >
@@ -77,15 +53,7 @@
 
             <li class="">
               <router-link
-                class="
-                  font-medium
-                  px-3
-                  py-2
-                  text-gray-700
-                  rounded-lg
-                  hover:bg-gray-100 hover:text-gray-900
-                  uppercase
-                "
+                class="font-medium px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900 uppercase"
                 to=""
                 >liên hệ</router-link
               >
@@ -96,211 +64,7 @@
     </aside>
     <main class="main-content">
       <div>
-        <div class="products max-w-screen-2xl mx-auto">
-          <ul class="grid grid-cols-5 gap-4 mb-4">
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <router-link to="#">
-                    <img
-                      class="rounded object-cover w-full h-full mx-auto"
-                      src="http://gobencat.bizz.vn/img_products/4650/b1.jpg"
-                      alt=""
-                    />
-                  </router-link>
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <router-link to="#">
-                    <img
-                      class="rounded object-cover h-full mx-auto"
-                      src="http://gobencat.bizz.vn/img_products/4650/b2.jpg"
-                      alt=""
-                    />
-                  </router-link>
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b5.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b6.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b7.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b8.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b9.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b10.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="px-4 sm:px-6 py-2 sm:py-4 mx-auto bg-white shadow">
-                <div class="thumbnail h-80 mb-2">
-                  <img
-                    class="rounded object-cover h-full mx-auto"
-                    src="http://gobencat.bizz.vn/img_products/4650/b11.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="info">
-                  <h3 class="font-bold text-gray-700 leading-snug">
-                    <router-link to="#">Phôi cao su sẻ sấy</router-link>
-                  </h3>
-                  <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <slot />
       </div>
     </main>
     <footer class="pt-6 border-t bg-gray-900">
