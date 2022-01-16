@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "./node_modules/.bin/vue-cli-service serve",
-    "build": "./node_modules/.bin/vue-cli-servicevue-cli-service build",
-    "test:unit": "./node_modules/.bin/vue-cli-servicevue-cli-service test:unit",
-    "test:e2e": "./node_modules/.bin/vue-cli-servicevue-cli-service test:e2e",
-    "lint": "./node_modules/.bin/vue-cli-servicevue-cli-service lint",
+    "build": "./node_modules/.bin/vue-cli-service build",
+    "test:unit": "./node_modules/.bin/vue-cli-service test:unit",
+    "test:e2e": "./node_modules/.bin/vue-cli-service test:e2e",
+    "lint": "./node_modules/.bin/vue-cli-service lint",
     "start": "npm run serve",
     "server": "json-server --watch data/db.json"
   },
