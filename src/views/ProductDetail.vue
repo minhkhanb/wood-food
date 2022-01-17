@@ -2,9 +2,9 @@
   <Layout>
     <div class="product-detail">
       <div class="container mx-auto">
-        <div class="product flex mb-8">
+        <div class="product flex flex-col sm:flex-row mb-8">
           <div
-            class="thumbnail product-detail w-1/2 h-product mb-2 relative overflow-hidden"
+            class="thumbnail product-detail w-full sm:w-1/2 h-96 sm:h-product mb-2 relative overflow-hidden"
           >
             <div
               class="img absolute top-0 left-0 right-0 bottom-0 transition-all transform"
@@ -19,7 +19,7 @@
             </div>
           </div>
 
-          <div class="info px-4 py-3">
+          <div class="info px-4 py-3 w-full sm:w-1/2">
             <h3
               class="font-semibold text-gray-700 text-xl uppercase leading-snug text-normal mb-2"
             >

@@ -13,7 +13,7 @@
                 class="p-2 pl-5 pr-5 bg-transparent transition-all border border-yellow-500 text-yellow-500 text-lg hover:bg-yellow-500 hover:text-gray-100 focus:border focus:border-yellow-300"
                 to="/product/1"
               >
-                Xem Nhanh
+                Xem Chi Tiết
               </router-link>
             </div>
             <div class="hot-label electric text-white text-xs font-medium">

@@ -1,9 +1,9 @@
 ﻿<template>
   <div
-    class="layout container max-w-full mx-auto px-4 lg:px-0"
+    class="layout container max-w-full mx-auto"
     :class="{ 'sidebar-open': openSidebar }"
   >
-    <header class="pt-6 overflow-hidden">
+    <header class="pt-6 overflow-hidden px-4">
       <div class="container mx-auto">
         <div
           class="flex flex-col lg:flex-row sm:text-left flex-auto justify-between items-center mb-6"
@@ -73,7 +73,7 @@
       </div>
     </header>
     <aside>
-      <div class="nav-menu hidden md:block my-0">
+      <div class="nav-menu hidden md:block my-0 px-4">
         <div class="container mx-auto">
           <nav class="flex px-0 py-5">
             <ul class="flex">
@@ -142,12 +142,12 @@
       </div>
 
       <div class="side-left">
-        <div class="container mx-auto">
+        <div class="">
           <SlickCarousel />
         </div>
       </div>
     </aside>
-    <main class="main-content">
+    <main class="main-content px-4">
       <div class="breacrum container mx-auto">
         <nav class="flex px-0 py-5">
           <ul class="flex">
