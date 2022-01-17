@@ -1,18 +1,10 @@
 <template>
-  <Layout>
-    <Home />
-  </Layout>
+  <router-view />
 </template>
 
 <script>
-import Layout from '@/components/Layout/Layout.vue';
-import Home from '@/views/Home';
-
 export default {
-  components: {
-    Home,
-    Layout,
-  },
+  components: {},
 };
 </script>
 

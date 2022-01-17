@@ -8,7 +8,7 @@
         <div class="flex flex-auto justify-between items-center mb-6">
           <div class="logo flex-stretch">
             <h1>
-              <router-link to="#">
+              <router-link to="/">
                 <figure
                   class="w-24 h-24 overflow-hidden bg-white rounded-xl mr-6"
                 >
@@ -81,7 +81,7 @@
               <li class="">
                 <router-link
                   class="block text-black font-medium px-8 py-4 hover:bg-white text-base hover:text-gray-500 border uppercase"
-                  to=""
+                  to="/"
                   >trang chủ</router-link
                 >
               </li>
@@ -125,7 +125,7 @@
         <nav class="flex px-0 py-5">
           <ul class="flex">
             <li class="">
-              <router-link class="px-2 py-4 block hover:text-gray-500" to="">
+              <router-link class="px-2 py-4 block hover:text-gray-500" to="/">
                 Home
               </router-link>
             </li>
@@ -135,7 +135,10 @@
             </li>
 
             <li class="">
-              <router-link class="px-2 py-4 block hover:text-gray-500" to="">
+              <router-link
+                class="px-2 py-4 block hover:text-gray-500"
+                to="/product"
+              >
                 Product
               </router-link>
             </li>

@@ -4,6 +4,9 @@
       <li :key="index" v-for="(product, index) in pageOfItems">
         <div class="bg-white shadow">
           <div class="thumbnail h-56 mb-2 relative overflow-hidden">
+            <div class="hot-label electric text-white text-xs font-medium">
+              <span>Hot New</span>
+            </div>
             <div
               class="absolute top-0 left-0 right-0 bottom-0 transition-all transform hover:scale-105"
             >
@@ -17,10 +20,15 @@
             </div>
           </div>
           <div class="info px-4 py-3">
-            <h3 class="font-medium text-gray-700 leading-snug text-normal mb-2">
+            <h3
+              class="font-semibold text-gray-700 leading-snug text-normal mb-2"
+            >
               <router-link to="#">{{ product.title }}</router-link>
             </h3>
-            <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
+            <div class="mt-2 text-sm text-gray-600 mb-2">Giá: Liên hệ</div>
+            <div>
+              <span>By Gỗ Bến Cát</span>
+            </div>
           </div>
         </div>
       </li>

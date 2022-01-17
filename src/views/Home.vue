@@ -1,58 +1,70 @@
 <template>
-  <div class="home">
-    <div class="container mx-auto">
-      <div class="category mb-8">
-        <h3
-          class="flex items-center justify-between font-medium text-xl text-green-700 uppercase mb-4"
-        >
-          Phôi cao su xẻ
+  <Layout>
+    <div class="home">
+      <div class="container mx-auto">
+        <div class="category mb-8">
+          <h3
+            class="flex items-center justify-between font-medium text-xl text-green-700 uppercase mb-4"
+          >
+            Phôi cao su xẻ
 
-          <router-link class="flex font-semibold items-center text-xs" to="#">
-            Xem Thêm
-            <ChevronDoubleRightIcon class="h-4" />
-          </router-link>
-        </h3>
-        <Product />
-      </div>
+            <router-link
+              class="flex font-semibold items-center text-xs"
+              to="/product"
+            >
+              Xem Thêm
+              <ChevronDoubleRightIcon class="h-4" />
+            </router-link>
+          </h3>
+          <Product />
+        </div>
 
-      <div class="category mb-8">
-        <h3
-          class="flex items-center justify-between font-medium text-xl text-green-700 uppercase mb-4"
-        >
-          Gỗ Cao Su
+        <div class="category mb-8">
+          <h3
+            class="flex items-center justify-between font-medium text-xl text-green-700 uppercase mb-4"
+          >
+            Gỗ Cao Su
 
-          <router-link class="flex font-semibold items-center text-xs" to="#">
-            Xem Thêm
-            <ChevronDoubleRightIcon class="h-4" />
-          </router-link>
-        </h3>
-        <Product />
-      </div>
+            <router-link
+              class="flex font-semibold items-center text-xs"
+              to="/product"
+            >
+              Xem Thêm
+              <ChevronDoubleRightIcon class="h-4" />
+            </router-link>
+          </h3>
+          <Product />
+        </div>
 
-      <div class="category mb-8">
-        <h3
-          class="flex items-center justify-between font-medium text-xl text-green-700 uppercase mb-4"
-        >
-          Gỗ ghép, ván ghép
+        <div class="category mb-8">
+          <h3
+            class="flex items-center justify-between font-medium text-xl text-green-700 uppercase mb-4"
+          >
+            Gỗ ghép, ván ghép
 
-          <router-link class="flex font-semibold items-center text-xs" to="#">
-            Xem Thêm
-            <ChevronDoubleRightIcon class="h-4" />
-          </router-link>
-        </h3>
-        <Product />
+            <router-link
+              class="flex font-semibold items-center text-xs"
+              to="/product"
+            >
+              Xem Thêm
+              <ChevronDoubleRightIcon class="h-4" />
+            </router-link>
+          </h3>
+          <Product />
+        </div>
       </div>
     </div>
-  </div>
+  </Layout>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Product from '@/sections/Product/index.vue';
 import { ChevronDoubleRightIcon } from '@heroicons/vue/outline';
+import Layout from '@/components/Layout/Layout.vue';
 
 export default defineComponent({
   name: 'Home',
-  components: { Product, ChevronDoubleRightIcon },
+  components: { Product, ChevronDoubleRightIcon, Layout },
 });
 </script>
