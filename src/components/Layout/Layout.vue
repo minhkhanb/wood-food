@@ -185,9 +185,9 @@
       </div>
     </main>
     <footer class="pt-6 border-t bg-gray-900">
-      <div class="container mx-auto">
-        <aside class="mb-8">
-          <div class="block sm:flex text-center sm:text-left">
+      <div class="container mx-auto px-8">
+        <aside class="flex flex-col sm:flex-row mb-8">
+          <div class="block w-full sm:w-9/12 sm:flex text-center sm:text-left">
             <div class="w-full sm:w-1/4 px-2 mb-6">
               <h5 class="mb-3 text-white uppercase text-lg font-medium">
                 THÔNG TIN LIÊN HỆ
@@ -267,7 +267,7 @@
             </div>
           </div>
 
-          <div class="social-box mx-auto sm:ml-0">
+          <div class="social-box w-full sm:w-3/12 mx-auto sm:ml-0">
             <div class="mb-2">
               <div class="social">
                 <div
@@ -294,12 +294,7 @@
                   api-key="AIzaSyBbPdgwcEOZZLYhU3yR-9ozwntTDili30w"
                   :center="center"
                   :zoom="15"
-                  style="
-                    width: 100%;
-                    max-width: 320px;
-                    margin: 0 auto;
-                    height: 180px;
-                  "
+                  style="width: 100%; max-width: 320px; height: 180px"
                 >
                   <Marker :options="{ position: center }" />
                 </GoogleMap>
