@@ -8,9 +8,9 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "start": "node ./scripts/server.js",
+    "start": "node server.js",
     "server": "json-server --watch data/db.json",
-    "heroku": "node scripts/server.js"
+    "heroku": "node server.js"
   },
   "dependencies": {
     "@heroicons/vue": "^1.0.4",
