@@ -133,6 +133,14 @@
                 <router-link
                   class="block text-black font-medium px-8 py-4 text-base hover:bg-white hover:text-gray-500 border uppercase"
                   to=""
+                  >dịch vụ</router-link
+                >
+              </li>
+
+              <li class="">
+                <router-link
+                  class="block text-black font-medium px-8 py-4 text-base hover:bg-white hover:text-gray-500 border uppercase"
+                  to=""
                   >liên hệ</router-link
                 >
               </li>
@@ -251,15 +259,45 @@
             </div>
 
             <div class="w-full sm:w-1/4 px-2 mb-6">
-              <h5 class="mb-3 text-white uppercase text-lg font-medium">
-                Hướng dẫn sử dụng
-              </h5>
               <div class="info text-gray-300">
                 <ul>
-                  <li class="mb-2">
-                    <router-link class="hover:text-white" to="#"
-                      >Hướng dẫn sử dụng</router-link
-                    >
+                  <li>
+                    <div class="social w-full">
+                      <div class="mb-2">
+                        <div class="social">
+                          <div
+                            class="fb-page"
+                            data-href="https://www.facebook.com/facebook"
+                            data-tabs="events"
+                            data-width="320"
+                            data-height=""
+                            data-small-header="false"
+                            data-adapt-container-width="true"
+                            data-hide-cover="false"
+                            data-show-facepile="true"
+                          >
+                            <blockquote
+                              cite="https://www.facebook.com/facebook"
+                              class="fb-xfbml-parse-ignore"
+                            >
+                              <a href="https://www.facebook.com/facebook"
+                                >Meta</a
+                              >
+                            </blockquote>
+                          </div>
+                        </div>
+                        <div class="map">
+                          <GoogleMap
+                            api-key="AIzaSyBbPdgwcEOZZLYhU3yR-9ozwntTDili30w"
+                            :center="center"
+                            :zoom="15"
+                            style="width: 100%; max-width: 320px; height: 180px"
+                          >
+                            <Marker :options="{ position: center }" />
+                          </GoogleMap>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -312,6 +350,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { GoogleMap, Marker } from 'vue3-google-map';
 import {
   TruckIcon,
   PhoneIcon,
@@ -329,12 +368,19 @@ export default defineComponent({
     ClockIcon,
     SlickCarousel,
     HomeIcon,
+    GoogleMap,
+    Marker,
   },
   data() {
     return {
       openSidebar: false,
       img: require('@/assets/images/avatar.jpg'),
     };
+  },
+  setup() {
+    const center = { lat: 11.0950583, lng: 106.2611953 };
+
+    return { center };
   },
   created() {
     console.log(this.img);

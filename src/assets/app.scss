@@ -34,6 +34,13 @@ body {
     }
   }
 
+  .social .social {
+
+    iframe {
+      @apply m-0;
+    }
+  }
+
   .thumbnail {
     
     &:hover {
