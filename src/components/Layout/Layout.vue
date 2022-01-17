@@ -291,7 +291,12 @@
                             api-key="AIzaSyBbPdgwcEOZZLYhU3yR-9ozwntTDili30w"
                             :center="center"
                             :zoom="15"
-                            style="width: 100%; max-width: 320px; height: 180px"
+                            style="
+                              width: 100%;
+                              max-width: 320px;
+                              margin: 0 auto;
+                              height: 180px;
+                            "
                           >
                             <Marker :options="{ position: center }" />
                           </GoogleMap>
