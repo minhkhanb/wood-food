@@ -34,12 +34,16 @@ body {
     }
   }
 
-  .social .social {
+  .social-box{
+    width: 320px;
+    
+    .social {
 
-    iframe {
-      @apply m-0;
+      iframe {
+        @apply m-0;
+      }
     }
-  }
+  } 
 
   .thumbnail {
     

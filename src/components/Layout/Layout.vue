@@ -239,16 +239,9 @@
                 <ul>
                   <li class="mb-2">
                     <router-link class="hover:text-white" to="#"
-                      >Chính sách bảo mật</router-link
-                    >
-                  </li>
-
-                  <li class="mb-2">
-                    <router-link class="hover:text-white" to="#"
                       >Chính sách vận chuyển</router-link
                     >
                   </li>
-
                   <li class="mb-2">
                     <router-link class="hover:text-white" to="#"
                       >Quy định thanh toán</router-link
@@ -259,52 +252,57 @@
             </div>
 
             <div class="w-full sm:w-1/4 px-2 mb-6">
+              <h5 class="mb-3 text-white uppercase text-lg font-medium">
+                Hướng dẫn sử dụng
+              </h5>
               <div class="info text-gray-300">
                 <ul>
-                  <li>
-                    <div class="social w-full">
-                      <div class="mb-2">
-                        <div class="social">
-                          <div
-                            class="fb-page"
-                            data-href="https://www.facebook.com/facebook"
-                            data-tabs="events"
-                            data-width="320"
-                            data-height=""
-                            data-small-header="false"
-                            data-adapt-container-width="true"
-                            data-hide-cover="false"
-                            data-show-facepile="true"
-                          >
-                            <blockquote
-                              cite="https://www.facebook.com/facebook"
-                              class="fb-xfbml-parse-ignore"
-                            >
-                              <a href="https://www.facebook.com/facebook"
-                                >Meta</a
-                              >
-                            </blockquote>
-                          </div>
-                        </div>
-                        <div class="map">
-                          <GoogleMap
-                            api-key="AIzaSyBbPdgwcEOZZLYhU3yR-9ozwntTDili30w"
-                            :center="center"
-                            :zoom="15"
-                            style="
-                              width: 100%;
-                              max-width: 320px;
-                              margin: 0 auto;
-                              height: 180px;
-                            "
-                          >
-                            <Marker :options="{ position: center }" />
-                          </GoogleMap>
-                        </div>
-                      </div>
-                    </div>
+                  <li class="mb-2">
+                    <router-link class="hover:text-white" to="#"
+                      >Hướng dẫn mua hàng</router-link
+                    >
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-box mx-auto sm:ml-0">
+            <div class="mb-2">
+              <div class="social">
+                <div
+                  class="fb-page"
+                  data-href="https://www.facebook.com/facebook"
+                  data-tabs="events"
+                  data-width="320"
+                  data-height=""
+                  data-small-header="false"
+                  data-adapt-container-width="true"
+                  data-hide-cover="false"
+                  data-show-facepile="true"
+                >
+                  <blockquote
+                    cite="https://www.facebook.com/facebook"
+                    class="fb-xfbml-parse-ignore"
+                  >
+                    <a href="https://www.facebook.com/facebook">Meta</a>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="map">
+                <GoogleMap
+                  api-key="AIzaSyBbPdgwcEOZZLYhU3yR-9ozwntTDili30w"
+                  :center="center"
+                  :zoom="15"
+                  style="
+                    width: 100%;
+                    max-width: 320px;
+                    margin: 0 auto;
+                    height: 180px;
+                  "
+                >
+                  <Marker :options="{ position: center }" />
+                </GoogleMap>
               </div>
             </div>
           </div>
