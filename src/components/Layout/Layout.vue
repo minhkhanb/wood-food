@@ -94,12 +94,39 @@
                 >
               </li>
 
-              <li class="">
+              <li class="menu-item relative">
                 <router-link
                   class="block text-black font-medium px-8 py-4 text-base hover:bg-white hover:text-gray-500 border uppercase"
                   to=""
-                  >sản phẩm</router-link
                 >
+                  sản phẩm
+                </router-link>
+
+                <ul class="sub-menu">
+                  <li class="">
+                    <router-link
+                      class="block text-black font-medium px-8 py-4 hover:bg-white text-base hover:text-gray-500 border uppercase"
+                      to="/product"
+                      >Phôi Cao Su Xẻ Sấy</router-link
+                    >
+                  </li>
+
+                  <li class="">
+                    <router-link
+                      class="block text-black font-medium px-8 py-4 hover:bg-white text-base hover:text-gray-500 border uppercase"
+                      to="/product"
+                      >Gỗ Ghép, Ván Ghép</router-link
+                    >
+                  </li>
+
+                  <li class="">
+                    <router-link
+                      class="block text-black font-medium px-8 py-4 hover:bg-white text-base hover:text-gray-500 border uppercase"
+                      to="/product"
+                      >Gỗ Cao Su</router-link
+                    >
+                  </li>
+                </ul>
               </li>
 
               <li class="">

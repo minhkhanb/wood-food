@@ -19,6 +19,21 @@ body {
 }
 
 @layer components {
+  .menu-item {
+    @apply relative;
+
+    .sub-menu {
+      @apply opacity-0 absolute w-max transition-all transform translate-y-20 top-full left-0 bg-gray-100;
+      z-index: -1;
+    }
+
+    &:hover {
+      .sub-menu {
+        @apply opacity-100 z-10 translate-y-0;
+      }
+    }
+  }
+
   .thumbnail {
     
     &:hover {

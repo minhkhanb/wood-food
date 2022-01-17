@@ -33,15 +33,23 @@
             <div>
               <p>Thông Tin Sản Phẩm:<br /></p>
               <ul>
-                <li>Are more than 97% naturally-derived from plants</li>
-                <li>Use 100% natural plant-based essential oils</li>
-                <li>Contain no synthetic colors</li>
-                <li>Contain no synthetic fragrances</li>
-                <li>Contain no petroleum-based surfactants</li>
-                <li>Contain no phenoxyethanol</li>
-                <li>Are paraben-free</li>
-                <li>Are ethanol-free</li>
-                <li>Are vegan</li>
+                <li>
+                  - Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry
+                </li>
+                <li>
+                  - It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout.
+                </li>
+                <li>
+                  - There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration
+                </li>
+                <li>
+                  - Contrary to popular belief, Lorem Ipsum is not simply random
+                  text
+                </li>
               </ul>
             </div>
           </div>
