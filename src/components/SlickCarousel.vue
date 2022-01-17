@@ -7,13 +7,13 @@
   >
     <swiper-slide>
       <img
-        class="w-full max-h-banner object-fill"
+        class="w-full max-h-banner object-cover"
         src="http://gobencat.bizz.vn/img_slide/4650/sl1.jpg"
       />
     </swiper-slide>
     <swiper-slide>
       <img
-        class="w-full max-h-banner object-fill"
+        class="w-full max-h-banner object-cover"
         src="http://gobencat.bizz.vn/img_slide/4650/sl.jpg"
       />
     </swiper-slide>
