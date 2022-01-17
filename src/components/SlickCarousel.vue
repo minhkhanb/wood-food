@@ -2,6 +2,11 @@
   <swiper
     :slides-per-view="1"
     :space-between="50"
+    :centeredSlides="true"
+    :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
   >
@@ -25,6 +30,9 @@ import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper.scss';
 import { SwiperEvents } from 'swiper/types';
+import SwiperCore, { Autoplay } from 'swiper';
+
+SwiperCore.use([Autoplay]);
 
 export default defineComponent({
   name: 'SlickCarousel',
