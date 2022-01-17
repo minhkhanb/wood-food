@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "start": "npm run serve",
+    "start": "node ./scripts/server.js",
     "server": "json-server --watch data/db.json",
     "heroku": "node scripts/server.js"
   },
