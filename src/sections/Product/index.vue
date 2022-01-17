@@ -4,11 +4,21 @@
       <li :key="index" v-for="(product, index) in pageOfItems">
         <div class="bg-white shadow">
           <div class="thumbnail h-56 mb-2 relative overflow-hidden">
+            <div
+              class="thumbnail-overlay transition-all flex items-center justify-center bg-black bg-opacity-70 absolute top-0 left-0 right-0 bottom-0 z-20 opacity-0"
+            >
+              <router-link
+                class="p-2 pl-5 pr-5 bg-transparent transition-all border border-yellow-500 text-yellow-500 text-lg hover:bg-yellow-500 hover:text-gray-100 focus:border focus:border-yellow-300"
+                to="/product-detail"
+              >
+                Xem Nhanh
+              </router-link>
+            </div>
             <div class="hot-label electric text-white text-xs font-medium">
               <span>Hot New</span>
             </div>
             <div
-              class="absolute top-0 left-0 right-0 bottom-0 transition-all transform hover:scale-105"
+              class="img absolute top-0 left-0 right-0 bottom-0 transition-all transform hover:scale-105"
             >
               <router-link to="#">
                 <img
