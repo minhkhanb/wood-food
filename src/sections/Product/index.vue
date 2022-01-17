@@ -25,7 +25,7 @@
         </div>
       </li>
     </ul>
-    <div class="pagination pb-4 pt-4">
+    <div v-if="$props.paging" class="pagination pb-4 pt-4">
       <ul
         v-if="pager.pages && pager.pages.length"
         class="flex justify-center pl-0 list-none rounded my-2"
@@ -112,6 +112,12 @@ interface Pager {
 
 export default defineComponent({
   name: 'Product',
+  props: {
+    paging: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       numOfColumn: 5,
@@ -124,7 +130,9 @@ export default defineComponent({
       console.log('onPageChanged');
     },
     getProducts(curPage: number) {
-      const items = [...Array(160).keys()].map((i) => ({
+      const numOfProducts = !this.$props.paging ? 10 : 160;
+      console.log(numOfProducts);
+      const items = [...Array(numOfProducts).keys()].map((i) => ({
         id: i + 1,
         title: 'Phôi cao su sẻ sấy ' + (i + 1),
         thumbnail: 'http://gobencat.bizz.vn/img_products/4650/b1.jpg',
