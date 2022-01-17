@@ -37,7 +37,7 @@
             </h3>
             <div class="mt-2 text-sm text-gray-600 mb-2">Giá: Liên hệ</div>
             <div>
-              <span>By Gỗ Bến Cát</span>
+              <span>Xuất xứ: Gỗ Bến Cát</span>
             </div>
           </div>
         </div>
