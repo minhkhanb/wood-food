@@ -1,5 +1,5 @@
 {
-  "name": "vue-typescript",
+  "name": "go-ben-cat",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -60,6 +60,7 @@
     "vue-jest": "^5.0.0-0"
   },
   "gitHooks": {
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [

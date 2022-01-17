@@ -2,18 +2,22 @@
   <div class="products max-w-screen-2xl mx-auto">
     <ul :class="`grid grid-cols-${numOfColumn} gap-4 mb-4`">
       <li :key="index" v-for="(product, index) in pageOfItems">
-        <div class="px-3 sm:px-3 py-3 sm:py-3 mx-auto bg-white shadow">
-          <div class="thumbnail h-64 mb-2">
-            <router-link to="#">
-              <img
-                class="rounded object-cover w-full h-full mx-auto"
-                :src="product.thumbnail"
-                alt=""
-              />
-            </router-link>
+        <div class="bg-white shadow">
+          <div class="thumbnail h-56 mb-2 relative overflow-hidden">
+            <div
+              class="absolute top-0 left-0 right-0 bottom-0 transition-all transform hover:scale-105"
+            >
+              <router-link to="#">
+                <img
+                  class="object-cover w-full h-full mx-auto"
+                  :src="product.thumbnail"
+                  alt=""
+                />
+              </router-link>
+            </div>
           </div>
-          <div class="info">
-            <h3 class="font-bold text-gray-700 leading-snug text-xl">
+          <div class="info px-4 py-3">
+            <h3 class="font-medium text-gray-700 leading-snug text-normal mb-2">
               <router-link to="#">{{ product.title }}</router-link>
             </h3>
             <div class="mt-2 text-sm text-gray-600">Liên hệ</div>
@@ -28,19 +32,21 @@
       >
         <li
           :class="{ disabled: pager.currentPage === 1 }"
-          class="page-item first-item relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-blue-700 border-r-0 ml-0 rounded-l hover:bg-gray-200"
+          class="page-item first-item relative block leading-tight mr-px bg-white text-black hover:bg-gray-200"
         >
-          <router-link :to="{ query: { page: 1 } }" class="page-link"
+          <router-link
+            :to="{ query: { page: 1 } }"
+            class="block page-link py-4 px-6"
             >First</router-link
           >
         </li>
         <li
           :class="{ disabled: pager.currentPage === 1 }"
-          class="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-blue-700 border-r-0 hover:bg-gray-200"
+          class="relative block leading-tight bg-white text-black mr-px hover:bg-gray-200"
         >
           <router-link
             :to="{ query: { page: pager.currentPage - 1 } }"
-            class="page-link"
+            class="block page-link py-4 px-6"
             >Previous</router-link
           >
         </li>
@@ -48,29 +54,32 @@
           v-for="page in pager.pages"
           :key="page"
           :class="{ active: pager.currentPage === page }"
-          class="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-blue-700 border-r-0 hover:bg-gray-200"
+          class="relative block leading-tight bg-white mr-px text-black hover:bg-gray-200"
         >
-          <router-link :to="{ query: { page: page } }" class="page-link">{{
-            page
-          }}</router-link>
+          <router-link
+            :to="{ query: { page: page } }"
+            class="block page-link py-4 px-6"
+          >
+            {{ page }}
+          </router-link>
         </li>
         <li
           :class="{ disabled: pager.currentPage === pager.totalPages }"
-          class="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-blue-700 border-r-0 hover:bg-gray-200"
+          class="relative block leading-tight bg-white mr-px text-black hover:bg-gray-200"
         >
           <router-link
             :to="{ query: { page: pager.currentPage + 1 } }"
-            class="page-link"
+            class="block page-link py-4 px-6"
             >Next</router-link
           >
         </li>
         <li
           :class="{ disabled: pager.currentPage === pager.totalPages }"
-          class="relative block py-2 px-3 leading-tight bg-white border border-gray-300 text-blue-700 rounded-r hover:bg-gray-200"
+          class="relative block leading-tight bg-white mr-px text-black hover:bg-gray-200"
         >
           <router-link
             :to="{ query: { page: pager.totalPages } }"
-            class="page-link"
+            class="block page-link py-4 px-6"
             >Last</router-link
           >
         </li>
