@@ -3,15 +3,17 @@
     class="layout container max-w-full mx-auto"
     :class="{ 'sidebar-open': openSidebar }"
   >
-    <header class="pt-6 border-b">
+    <header class="pt-6">
       <div class="container mx-auto">
         <div class="flex flex-auto justify-between items-center mb-6">
           <div class="logo flex-stretch">
             <h1>
               <router-link to="#">
-                <figure class="rounded-xl p-8">
+                <figure
+                  class="w-24 h-24 overflow-hidden bg-white rounded-xl mr-6"
+                >
                   <img
-                    class="w-24 h-24 rounded-full mx-auto"
+                    class="w-full h-full object-contain"
                     :src="require('@/assets/images/logo.jpg')"
                     alt="CÔNG TY TNHH GỖ BẾN CÁT"
                   />
@@ -61,18 +63,24 @@
       </div>
     </header>
     <aside>
-      <div class="side-left">
+      <div class="nav-menu my-0">
         <div class="container mx-auto">
-          <SlickCarousel />
-        </div>
-      </div>
-      <div class="nav-menu bg-green-500 mb-6">
-        <div class="container mx-auto">
-          <nav class="flex px-8 py-4">
+          <nav class="flex px-0 py-5">
             <ul class="flex">
               <li class="">
                 <router-link
-                  class="text-white font-medium px-3 py-2 rounded-lg text-lg hover:text-gray-300 uppercase"
+                  class="w-16 px-2 py-4 border block overflow-hidden"
+                  to=""
+                >
+                  <span class="w-full h-1 bg-green-900 block mb-1"></span>
+                  <span class="w-full h-1 bg-green-900 block my-1"></span>
+                  <span class="w-full h-1 bg-green-900 block mb-1"></span>
+                </router-link>
+              </li>
+
+              <li class="">
+                <router-link
+                  class="block text-black font-medium px-8 py-4 hover:bg-white text-base hover:text-gray-500 border uppercase"
                   to=""
                   >trang chủ</router-link
                 >
@@ -80,7 +88,7 @@
 
               <li class="">
                 <router-link
-                  class="text-white font-medium px-3 py-2 rounded-lg text-lg hover:text-gray-300 uppercase"
+                  class="block text-black font-medium px-8 py-4 text-base hover:bg-white hover:text-gray-500 border uppercase"
                   to=""
                   >giới thiệu</router-link
                 >
@@ -88,7 +96,7 @@
 
               <li class="">
                 <router-link
-                  class="text-white font-medium px-3 py-2 rounded-lg text-lg hover:text-gray-300 uppercase"
+                  class="block text-black font-medium px-8 py-4 text-base hover:bg-white hover:text-gray-500 border uppercase"
                   to=""
                   >sản phẩm</router-link
                 >
@@ -96,7 +104,7 @@
 
               <li class="">
                 <router-link
-                  class="text-white font-medium px-3 py-2 rounded-lg text-lg hover:text-gray-300 uppercase"
+                  class="block text-black font-medium px-8 py-4 text-base hover:bg-white hover:text-gray-500 border uppercase"
                   to=""
                   >liên hệ</router-link
                 >
@@ -105,8 +113,35 @@
           </nav>
         </div>
       </div>
+
+      <div class="side-left">
+        <div class="container mx-auto">
+          <SlickCarousel />
+        </div>
+      </div>
     </aside>
     <main class="main-content">
+      <div class="breacrum container mx-auto">
+        <nav class="flex px-0 py-5">
+          <ul class="flex">
+            <li class="">
+              <router-link class="px-2 py-4 block hover:text-gray-500" to="">
+                Home
+              </router-link>
+            </li>
+
+            <li class="">
+              <span class="px-2 py-4 block" to=""> / </span>
+            </li>
+
+            <li class="">
+              <router-link class="px-2 py-4 block hover:text-gray-500" to="">
+                Product
+              </router-link>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div>
         <slot />
       </div>
@@ -241,7 +276,7 @@
       </div>
     </footer>
 
-    <router-link to="#" class="scrollToTop">Scroll To Top</router-link>
+    <!-- <router-link to="#" class="scrollToTop">Scroll To Top</router-link> -->
   </div>
 </template>
 
