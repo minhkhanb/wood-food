@@ -1,16 +1,18 @@
 ﻿<template>
   <div
-    class="layout container max-w-full mx-auto"
+    class="layout container max-w-full mx-auto px-4 lg:px-0"
     :class="{ 'sidebar-open': openSidebar }"
   >
-    <header class="pt-6">
+    <header class="pt-6 overflow-hidden">
       <div class="container mx-auto">
-        <div class="flex flex-auto justify-between items-center mb-6">
-          <div class="logo flex-stretch">
+        <div
+          class="flex flex-col lg:flex-row sm:text-left flex-auto justify-between items-center mb-6"
+        >
+          <div class="logo flex-stretch mb-4">
             <h1>
               <router-link to="/">
                 <figure
-                  class="w-24 h-24 overflow-hidden bg-white rounded-xl mr-6"
+                  class="w-24 h-24 overflow-hidden bg-white rounded-xl mr-0 sm:mr-6"
                 >
                   <img
                     class="w-full h-full object-contain"
@@ -23,7 +25,7 @@
           </div>
 
           <div
-            class="flex flex-auto w-full px-4 py-2 search border border-gray-700 rounded-3xl overflow-hidden"
+            class="flex flex-auto w-full px-4 py-2 search border border-gray-700 rounded-3xl overflow-hidden mb-4"
           >
             <input
               type="text"
@@ -35,25 +37,33 @@
             </button>
           </div>
 
-          <div class="top-bar flex flex-auto ml-8">
-            <div class="contact flex items-center">
+          <div
+            class="top-bar flex flex-col sm:flex-row items-center flex-auto ml-0 sm:ml-8"
+          >
+            <div class="contact flex flex-col sm:flex-row items-center mb-4">
               <PhoneIcon class="text-yellow-500 w-12" />
-              <p class="text-yellow-500 ml-2 font-bold w-32">
+              <p
+                class="text-yellow-500 sm:ml-2 font-bold w-32 text-center sm:text-left"
+              >
                 Tư vấn hỗ trợ <br />0986 625 525
               </p>
             </div>
 
-            <div class="work-open flex items-center">
+            <div class="work-open flex flex-col sm:flex-row items-center mb-4">
               <ClockIcon class="text-green-500 w-12" />
-              <p class="text-green-500 ml-2 font-bold w-56">
+              <p
+                class="text-green-500 ml-2 font-bold w-56 text-center sm:text-left"
+              >
                 Thời gian làm việc <br />
                 <span class="font-medium">Thứ 2 - Thứ 7 | 8:00 - 17:00</span>
               </p>
             </div>
 
-            <div class="shipping flex items-center">
+            <div class="shipping flex flex-col sm:flex-row items-center mb-4">
               <TruckIcon class="text-green-500 w-12" />
-              <p class="text-green-500 ml-2 font-bold w-56">
+              <p
+                class="text-green-500 ml-2 font-bold w-56 text-center sm:text-left"
+              >
                 Miễn phí vận chuyển <br />
                 <span class="font-medium">Đơn hàng > 1.000.000 VNĐ</span>
               </p>
@@ -63,7 +73,7 @@
       </div>
     </header>
     <aside>
-      <div class="nav-menu my-0">
+      <div class="nav-menu hidden md:block my-0">
         <div class="container mx-auto">
           <nav class="flex px-0 py-5">
             <ul class="flex">
@@ -169,8 +179,8 @@
     <footer class="pt-6 border-t bg-gray-900">
       <div class="container mx-auto">
         <aside class="mb-8">
-          <div class="flex">
-            <div class="w-1/4 px-2">
+          <div class="block sm:flex text-center sm:text-left">
+            <div class="w-full sm:w-1/4 px-2 mb-6">
               <h5 class="mb-3 text-white uppercase text-lg font-medium">
                 THÔNG TIN LIÊN HỆ
               </h5>
@@ -186,7 +196,7 @@
               </div>
             </div>
 
-            <div class="w-1/4 px-2">
+            <div class="w-full sm:w-1/4 px-2 mb-6">
               <h5 class="mb-3 text-white uppercase text-lg font-medium">
                 GIỚI THIỆU
               </h5>
@@ -213,7 +223,7 @@
               </div>
             </div>
 
-            <div class="w-1/4 px-2">
+            <div class="w-full sm:w-1/4 px-2 mb-6">
               <h5 class="mb-3 text-white uppercase text-lg font-medium">
                 Chính sách & quy định
               </h5>
@@ -240,7 +250,7 @@
               </div>
             </div>
 
-            <div class="w-1/4 px-2">
+            <div class="w-full sm:w-1/4 px-2 mb-6">
               <h5 class="mb-3 text-white uppercase text-lg font-medium">
                 Hướng dẫn sử dụng
               </h5>
@@ -259,12 +269,12 @@
       </div>
       <div class="copyright border-t border-gray-600 p-4">
         <div class="container mx-auto">
-          <div class="flex text-gray-300 justify-between">
-            <div class="col-left flex items-center">
+          <div class="block sm:flex text-center text-gray-300 justify-between">
+            <div class="col-left flex items-center mb-2">
               <p>Copyright © 2022 CÔNG TY TNHH GỖ BẾN CÁT.</p>
             </div>
-            <div class="col-right">
-              <div class="flex">
+            <div class="col-right mb-2">
+              <div class="flex justify-center">
                 <router-link class="px-1" to="#">
                   <img
                     :src="require('@/assets/images/icon-facebook.png')"

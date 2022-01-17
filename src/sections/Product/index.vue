@@ -1,6 +1,8 @@
 <template>
   <div class="products max-w-screen-2xl mx-auto">
-    <ul :class="`grid grid-cols-${numOfColumn} gap-4 mb-4`">
+    <ul
+      :class="`grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mb-4`"
+    >
       <li :key="index" v-for="(product, index) in pageOfItems">
         <div class="bg-white shadow">
           <div class="thumbnail h-56 mb-2 relative overflow-hidden">
@@ -43,7 +45,10 @@
         </div>
       </li>
     </ul>
-    <div v-if="$props.paging" class="pagination pb-4 pt-4">
+    <div
+      v-if="$props.paging"
+      class="pagination hidden lg:block pb-4 pt-4 overflow-hidden"
+    >
       <ul
         v-if="pager.pages && pager.pages.length"
         class="flex justify-center pl-0 list-none rounded my-2"

@@ -29,7 +29,7 @@ body {
 
     &:hover {
       .sub-menu {
-        @apply opacity-100 z-10 translate-y-0;
+        @apply opacity-100 z-10 translate-y-0 z-50;
       }
     }
   }
