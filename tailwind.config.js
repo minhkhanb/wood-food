@@ -12,6 +12,9 @@ module.exports = {
       maxHeight: {
         banner: 500,
       },
+      height: {
+        product: 680,
+      },
     },
   },
   variants: {

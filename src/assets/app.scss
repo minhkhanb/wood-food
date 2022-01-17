@@ -20,16 +20,20 @@ body {
 
 @layer components {
   .thumbnail {
+    
     &:hover {
       .thumbnail-overlay {
         opacity: 1;
         z-index: 20;
       }
 
-      .img {
-        @apply scale-105;
+      &:not(.product-detail) {
+        .img {
+          @apply scale-105;
+        }
       }
     }
+    
   }
 
   .hot-label {

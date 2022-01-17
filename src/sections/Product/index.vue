@@ -9,7 +9,7 @@
             >
               <router-link
                 class="p-2 pl-5 pr-5 bg-transparent transition-all border border-yellow-500 text-yellow-500 text-lg hover:bg-yellow-500 hover:text-gray-100 focus:border focus:border-yellow-300"
-                to="/product-detail"
+                to="/product/1"
               >
                 Xem Nhanh
               </router-link>
@@ -20,7 +20,7 @@
             <div
               class="img absolute top-0 left-0 right-0 bottom-0 transition-all transform hover:scale-105"
             >
-              <router-link to="#">
+              <router-link to="/product/1">
                 <img
                   class="object-cover w-full h-full mx-auto"
                   :src="product.thumbnail"
@@ -33,7 +33,7 @@
             <h3
               class="font-semibold text-gray-700 leading-snug text-normal mb-2"
             >
-              <router-link to="#">{{ product.title }}</router-link>
+              <router-link to="/product/1">{{ product.title }}</router-link>
             </h3>
             <div class="mt-2 text-sm text-gray-600 mb-2">Giá: Liên hệ</div>
             <div>

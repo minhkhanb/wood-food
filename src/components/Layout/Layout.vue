@@ -145,7 +145,7 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="max-w-screen-xl mx-auto">
         <slot />
       </div>
     </main>
