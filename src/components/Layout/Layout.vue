@@ -70,20 +70,10 @@
               <li class="">
                 <router-link
                   class="w-16 px-2 py-4 border block overflow-hidden"
-                  to=""
-                >
-                  <span class="w-full h-1 bg-green-900 block mb-1"></span>
-                  <span class="w-full h-1 bg-green-900 block my-1"></span>
-                  <span class="w-full h-1 bg-green-900 block mb-1"></span>
-                </router-link>
-              </li>
-
-              <li class="">
-                <router-link
-                  class="block text-black font-medium px-8 py-4 hover:bg-white text-base hover:text-gray-500 border uppercase"
                   to="/"
-                  >trang chủ</router-link
                 >
+                  <HomeIcon class="w-6 mx-auto" />
+                </router-link>
               </li>
 
               <li class="">
@@ -317,6 +307,7 @@ import {
   PhoneIcon,
   SearchIcon,
   ClockIcon,
+  HomeIcon,
 } from '@heroicons/vue/outline';
 import SlickCarousel from '@/components/SlickCarousel.vue';
 
@@ -327,6 +318,7 @@ export default defineComponent({
     SearchIcon,
     ClockIcon,
     SlickCarousel,
+    HomeIcon,
   },
   data() {
     return {
